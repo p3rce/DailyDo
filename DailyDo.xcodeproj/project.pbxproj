@@ -13,6 +13,8 @@
 		B879FDC928440B870046B8D7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B879FDC828440B870046B8D7 /* ListView.swift */; };
 		B879FDCB28440CEB0046B8D7 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B879FDCA28440CEB0046B8D7 /* ListRowView.swift */; };
 		B879FDCD28440F3C0046B8D7 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B879FDCC28440F3C0046B8D7 /* AddView.swift */; };
+		B8C073CE2845523300D0CC81 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C073CD2845523300D0CC81 /* ItemModel.swift */; };
+		B8C073D12845599E00D0CC81 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C073D02845599E00D0CC81 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B879FDC828440B870046B8D7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B879FDCA28440CEB0046B8D7 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		B879FDCC28440F3C0046B8D7 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		B8C073CD2845523300D0CC81 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		B8C073D02845599E00D0CC81 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 		B879FDB8284407830046B8D7 /* DailyDo */ = {
 			isa = PBXGroup;
 			children = (
+				B8C073CF2845576100D0CC81 /* ViewModels */,
+				B8C073CC2845519B00D0CC81 /* Models */,
 				B879FDC728440B630046B8D7 /* Views */,
 				B879FDB9284407830046B8D7 /* DailyDoApp.swift */,
 				B879FDBD284407850046B8D7 /* Assets.xcassets */,
@@ -79,6 +85,22 @@
 				B879FDCC28440F3C0046B8D7 /* AddView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B8C073CC2845519B00D0CC81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8C073CD2845523300D0CC81 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8C073CF2845576100D0CC81 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B8C073D02845599E00D0CC81 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C073CE2845523300D0CC81 /* ItemModel.swift in Sources */,
 				B879FDCD28440F3C0046B8D7 /* AddView.swift in Sources */,
+				B8C073D12845599E00D0CC81 /* ListViewModel.swift in Sources */,
 				B879FDBA284407830046B8D7 /* DailyDoApp.swift in Sources */,
 				B879FDC928440B870046B8D7 /* ListView.swift in Sources */,
 				B879FDCB28440CEB0046B8D7 /* ListRowView.swift in Sources */,
