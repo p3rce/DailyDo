@@ -6,24 +6,33 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ListViewModel: ObservableObject {
     
-    @Published var items: [ItemModel] = []
+    @Published var items: [ItemModel] = [] {
+        //didSet gets called anytime we set the items Array, anytime changes are made to array
+        didSet {
+            saveItems()
+        }
+    }
+    let itemsKey: String = "items_list"
     
     init() {
         getItems()
     }
     
     func getItems() {
-        let newItems = [
-            
-            ItemModel(title: "First Title", isCompleted: false),
-            ItemModel(title: "Second Title", isCompleted: true),
-            ItemModel(title: "Third", isCompleted: false),
         
-        ]
-        items.append(contentsOf: newItems)
+        //Get items from UserDefaults and Convert from JSON Blob back to ItemModel
+        guard
+            let data = UserDefaults.standard.data(forKey: itemsKey),
+            let savedItems = try? JSONDecoder().decode([ItemModel].self, from: data)
+        else { return }
+        
+        self.items = savedItems
+        
+        
     }
     
     func deleteItem(indexSet: IndexSet) {
@@ -45,5 +54,13 @@ class ListViewModel: ObservableObject {
             items[index] = item.updateCompletion()
         }
         
+    }
+    
+    //We need to call this everytime a change is made (deleteItem, moveItem, addItem, updateItem)
+    func saveItems() {
+        //Convert our ItemModel to JSON
+        if let encodedData = try? JSONEncoder().encode(items) {
+            UserDefaults.standard.set(encodedData, forKey: itemsKey)
+        }
     }
 }
