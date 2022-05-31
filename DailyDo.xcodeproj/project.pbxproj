@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B85C0A1B2845CC7E00CA4BBA /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C0A1A2845CC7E00CA4BBA /* NoItemsView.swift */; };
 		B879FDBA284407830046B8D7 /* DailyDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B879FDB9284407830046B8D7 /* DailyDoApp.swift */; };
 		B879FDBE284407850046B8D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B879FDBD284407850046B8D7 /* Assets.xcassets */; };
 		B879FDC1284407850046B8D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B879FDC0284407850046B8D7 /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B85C0A1A2845CC7E00CA4BBA /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		B879FDB6284407830046B8D7 /* DailyDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B879FDB9284407830046B8D7 /* DailyDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDoApp.swift; sourceTree = "<group>"; };
 		B879FDBD284407850046B8D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				B879FDC828440B870046B8D7 /* ListView.swift */,
 				B879FDCA28440CEB0046B8D7 /* ListRowView.swift */,
 				B879FDCC28440F3C0046B8D7 /* AddView.swift */,
+				B85C0A1A2845CC7E00CA4BBA /* NoItemsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				B8C073D12845599E00D0CC81 /* ListViewModel.swift in Sources */,
 				B879FDBA284407830046B8D7 /* DailyDoApp.swift in Sources */,
 				B879FDC928440B870046B8D7 /* ListView.swift in Sources */,
+				B85C0A1B2845CC7E00CA4BBA /* NoItemsView.swift in Sources */,
 				B879FDCB28440CEB0046B8D7 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
