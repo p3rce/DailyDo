@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B81917022846F0CD000812F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81917012846F0CC000812F8 /* LaunchScreen.storyboard */; };
 		B879FDBA284407830046B8D7 /* DailyDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B879FDB9284407830046B8D7 /* DailyDoApp.swift */; };
 		B879FDBE284407850046B8D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B879FDBD284407850046B8D7 /* Assets.xcassets */; };
 		B879FDC1284407850046B8D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B879FDC0284407850046B8D7 /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B81917012846F0CC000812F8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B879FDB6284407830046B8D7 /* DailyDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B879FDB9284407830046B8D7 /* DailyDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDoApp.swift; sourceTree = "<group>"; };
 		B879FDBD284407850046B8D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				B879FDCA28440CEB0046B8D7 /* ListRowView.swift */,
 				B879FDCC28440F3C0046B8D7 /* AddView.swift */,
 				B8C247C428468309001F4EAB /* NoItemsView.swift */,
+				B81917012846F0CC000812F8 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81917022846F0CD000812F8 /* LaunchScreen.storyboard in Resources */,
 				B879FDC1284407850046B8D7 /* Preview Assets.xcassets in Resources */,
 				B879FDBE284407850046B8D7 /* Assets.xcassets in Resources */,
 			);
@@ -316,7 +320,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -346,7 +350,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
