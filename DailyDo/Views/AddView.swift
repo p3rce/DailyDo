@@ -21,7 +21,7 @@ struct AddView: View {
                 TextField("Type something here...", text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height: 55)
-                    .background(Color(#colorLiteral(red: 0.9135066867, green: 0.9135065675, blue: 0.9135066271, alpha: 1)))
+                    .background(Color(UIColor.secondarySystemBackground))
                 .cornerRadius(10)
                 
                 Button(action: saveButtonPressed, label: {
@@ -71,5 +71,6 @@ struct AddView_Previews: PreviewProvider {
             AddView()
         }
         .environmentObject(ListViewModel())
+        .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
