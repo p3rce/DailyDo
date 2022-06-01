@@ -11,6 +11,7 @@ struct AddView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
+    @FocusState private var addItemInFocus: Bool
     
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
@@ -22,7 +23,11 @@ struct AddView: View {
                     .padding(.horizontal)
                     .frame(height: 55)
                     .background(Color(UIColor.secondarySystemBackground))
+                    .focused($addItemInFocus)
+                    
+                
                 .cornerRadius(10)
+
                 
                 Button(action: saveButtonPressed, label: {
                     Text("Save".uppercased())
@@ -36,6 +41,11 @@ struct AddView: View {
 
             }
             .padding(14)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.addItemInFocus = true
+                }
+            }
         }
         .navigationTitle("Add an Item 🖋")
         .alert(isPresented: $showAlert, content: getAlert)
